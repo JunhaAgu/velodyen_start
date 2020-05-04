@@ -16,6 +16,7 @@ A. Setup Prerequisites ( from https://larrylisky.com/2016/11/03/point-cloud-libr
   sudo apt-get install libeigen3-dev
   sudo apt-get install libboost-all-dev
   sudo apt-get install libvtk5.10-qt4 libvtk5.10 libvtk5-dev
+  -->이거 설치하면 ros package 관련 이전것들 지워지는데 무슨문제인지?
   sudo apt-get install libqhull* libgtest-dev
   sudo apt-get install freeglut3-dev pkg-config
   sudo apt-get install libxmu-dev libxi-dev 
@@ -24,6 +25,8 @@ A. Setup Prerequisites ( from https://larrylisky.com/2016/11/03/point-cloud-libr
   
 B. pcl-1.8( from https://pcl.gitbook.io/tutorial/part-0/part00-chapter02 )
 #Ubuntu 16 (checked!)
+  mkdir Library
+  cd Library/
   wget https://github.com/PointCloudLibrary/pcl/archive/pcl-1.8.1.tar.gz
   tar zvfx pcl-1.8.1.tar.gz
 #In this step, you should change the file name(pcl_pcl-1.8.1 --> pcl-1.8.1)
@@ -33,14 +36,16 @@ B. pcl-1.8( from https://pcl.gitbook.io/tutorial/part-0/part00-chapter02 )
   make -j8
   sudo make install
   
+그냥 아래 홈페이지 따라하기
+https://askubuntu.com/questions/916260/how-to-install-point-cloud-library-v1-8-pcl-1-8-0-on-ubuntu-16-04-2-lts-for
+  
 ==========================================================================================================
 2. Install Eigen3 & Boost 
-A. Eigne3 (3.3.5)
+A. Eigne3 (3.3.6)
 Already installed in ROS (https://kezunlin.me/post/d97b21ee/)
 BUT! We need eigen3.3 (>-3.3 version)
-Downloda here --> http://eigen.tuxfamily.org/index.php?title=Main_Page
-Extract to Libraries and rename Eigen3.3.5
-  cd Libraries/Eigen3.3/
+Downloda here --> https://gitlab.com/libeigen/eigen/-/releases/3.3.6
+  cd Libraries/eigen-3.3.6/
   mkdir build
   cd build/
   cmake ..
@@ -61,9 +66,15 @@ A. Install libnabo
   SRC_DIR=`pwd`
   BUILD_DIR=${SRC_DIR}/build
   mkdir -p ${BUILD_DIR} && cd ${BUILD_DIR}
-  cmake -DCMAKE_BUILD_TYPE=RelWithDebInfo ${SRC_DIR}
+  cmake -D CMAKE_BUILD_TYPE=RelWithDebInfo ${SRC_DIR}
   make
   sudo make install
+  
+  추가
+  sudo apt-get install doxygen
+  
+(?)sudo apt update
+(?)sudo apt install ocl-icd-opencl-dev
 
 B. libpointmacher
   cd ~/Libraries/
@@ -97,14 +108,15 @@ A. dependencies
   sudo apt-get install libsuitesparse-dev
 
 B. Install Ceres Solver
-#Since Ubuntu 16.04 offers eigen 3.2.92 version to user, I installed 3.3.7 ver.
-  cd ~/Libraries/
+#Since Ubuntu 16.04 offers eigen 3.2.92 version to user, I installed 3.3.5 ver.
+  cd Libraries/
   git clone https://ceres-solver.googlesource.com/ceres-solver
-  cd ~/Libraries/
   cd ceres-solver/
   mkdir build
   cd build/
   cmake ..
+  make
+  sudo make install
 
 ==========================================================================================================
 5. YAML ( https://github.com/jbeder/yaml-cpp )
@@ -135,6 +147,9 @@ B. Install Ceres Solver
   
   sudo apt-get install ros-kinetic-pcl-ros
   (https://github.com/uzh-rpg/rpg_svo_example/issues/44)
+  
+  warning에 무슨 openni2 어쩌고 저쩌고
+  https://github.com/autowarefoundation/autoware/issues/1072
   
   ========================================================================================================
   calib_evaluation.cpp
