@@ -35,11 +35,11 @@ B. pcl-1.8( from https://pcl.gitbook.io/tutorial/part-0/part00-chapter02 )
   
 ==========================================================================================================
 2. Install Eigen3 & Boost 
-A. Eigne3
+A. Eigne3 (3.3.5)
 Already installed in ROS (https://kezunlin.me/post/d97b21ee/)
 BUT! We need eigen3.3 (>-3.3 version)
 Downloda here --> http://eigen.tuxfamily.org/index.php?title=Main_Page
-Extract to Libraries and rename Eigen3.3
+Extract to Libraries and rename Eigen3.3.5
   cd Libraries/Eigen3.3/
   mkdir build
   cd build/
@@ -116,9 +116,33 @@ B. Install Ceres Solver
   cmake ..
   make -j8
   sudo make install
-
+  
+6. opencv(4.0.1 ver.) X
+  follow this webpage X
+  https://webnautes.tistory.com/1030 X
+  
+  opencv(3.2.0 ver.)
+  https://agiantmind.tistory.com/183
+  
+**nav-msgs
+  sudo apt install ros-kinetic-nav-msgs
 ==========================================================================================================
 ==========================================================================================================
 **Dual Lidar calibration
   source ~/.bashrc
+  cd catkin_ws/src/
+  git clone https://github.com/ram-lab/lidar_appearance_calibration.git
   
+  sudo apt-get install ros-kinetic-pcl-ros
+  (https://github.com/uzh-rpg/rpg_svo_example/issues/44)
+  
+  ========================================================================================================
+  calib_evaluation.cpp
+  search jjiao --> modify
+  calib_preprocess.cpp
+  search jjiao --> modify
+  
+  https://snapcraft.io/install/cloudcompare/ubuntu
+  sudo apt update
+  sudo apt install snapd
+  sudo snap install cloudcompare
