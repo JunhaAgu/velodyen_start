@@ -197,3 +197,6 @@ rosbag play <파일 이름>.bag
 
 $ rosrun pcl_ros bag_to_pcd room_left.bag velodyne_points vel_to_pcd/
 $ rosrun pcl_ros bag_to_pcd <input_file>  <topic>         <output_directory>
+
+----------------------------------------------------------------------
+
