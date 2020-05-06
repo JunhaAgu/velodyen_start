@@ -163,12 +163,21 @@ B. Install Ceres Solver
   sudo apt update
   sudo apt install snapd
   sudo snap install cloudcompare
+  
+  ======================================================================================================
+  
+  veloview 다운로드 (아마 이거 통해서 csv파일로 바꿔줘야할듯요..
+https://www.paraview.org/veloview/
+  
 
 ----------------------------------------------------------------------------------------------------------
 1. Create a yaml file cfg.yaml into a fold, please follow ../data/example/top_tail/cfg.yaml to write
 
 2. Preproces raw pointcloud to keep points with only planes. You can use the below function or CloudCompare software like this:
 rosrun lidar_appearance_calibration calib_preprocess ../data/example/top_front/raw/ref.pcd ../data/example/top_front/raw/data.pcd ../data/example/top_front/raw/ref_filter.pcd ../data/example/top_front/raw/data_filter.pcd
+내꺼
+rosrun lidar_appearance_calibration calib_preprocess vel_to_pcd/planes/planes_down1.pcd vel_to_pcd/planes/planes_up1.pcd vel_to_pcd/planes/planes_down1_filter.pcd vel_to_pcd/planes/planes_up1_filter.pcd
+
 
 3. Extract planes from pointcloud
 terminal 1:
