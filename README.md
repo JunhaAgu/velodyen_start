@@ -157,6 +157,8 @@ B. Install Ceres Solver
   calib_preprocess.cpp
   search jjiao --> modify
   
+  eigen3랑 pcl-1.8 include할 때 필요한 버전들이 local에 있기 때문에 경로 설정 다시!
+  
   https://snapcraft.io/install/cloudcompare/ubuntu
   sudo apt update
   sudo apt install snapd
