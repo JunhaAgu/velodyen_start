@@ -187,3 +187,12 @@ Visualize and check the extracted plane order
 
 
 rosrun pcl_ros pcd_to_pointcloud ../data/example/top_front/plane/ref_planes.pcd
+
+---------------------------------------------------------------------------------
+로스백 record
+rosbag record -a -O <파일 이름>
+
+로스백 play
+rosbag play <파일 이름>.bag
+
+
