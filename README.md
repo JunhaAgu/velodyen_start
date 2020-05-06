@@ -161,3 +161,29 @@ B. Install Ceres Solver
   sudo apt update
   sudo apt install snapd
   sudo snap install cloudcompare
+
+----------------------------------------------------------------------------------------------------------
+1. Create a yaml file cfg.yaml into a fold, please follow ../data/example/top_tail/cfg.yaml to write
+
+2. Preproces raw pointcloud to keep points with only planes. You can use the below function or CloudCompare software like this:
+rosrun lidar_appearance_calibration calib_preprocess ../data/example/top_front/raw/ref.pcd ../data/example/top_front/raw/data.pcd ../data/example/top_front/raw/ref_filter.pcd ../data/example/top_front/raw/data_filter.pcd
+
+3. Extract planes from pointcloud
+terminal 1:
+roscore 먼저
+terminal 2:
+  cd ~/catkin_ws/src/lidar_appearance_calibration/config/
+  rosrun lidar_appearance_calibration calib_plane_extraction pcd ../data/example/top_front/cfg.yaml
+terminal 3:
+실행하고난뒤에 rviz를 켜놓는다(위치**)
+  cd ~/catkin_ws/src/lidar_appearance_calibration/config/
+  rviz -d ../rviz/plane_extraction.rviz
+terminal 4:
+터미널 2에서 계산되어 나옴
+  rostopic pub /contact/icp std_msgs/String "data: ''" 
+
+Visualize and check the extracted plane order
+
+
+
+rosrun pcl_ros pcd_to_pointcloud ../data/example/top_front/plane/ref_planes.pcd
