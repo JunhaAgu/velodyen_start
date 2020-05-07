@@ -210,4 +210,5 @@ $ rosrun pcl_ros bag_to_pcd room_left.bag velodyne_points vel_to_pcd/
 $ rosrun pcl_ros bag_to_pcd <input_file>  <topic>         <output_directory>
 
 ----------------------------------------------------------------------
-
+pcd2csv parser 참고
+https://github.com/jacoblambert/pcd2ILCCcsv
