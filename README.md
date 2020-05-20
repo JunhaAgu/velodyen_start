@@ -58,7 +58,7 @@ sudo make install
 If the above method does not work, ollow [here](https://askubuntu.com/questions/916260/how-to-install-point-cloud-library-v1-8-pcl-1-8-0-on-ubuntu-16-04-2-lts-for)
 
 # 2. Install Eigen3 & Boost 
-## 2-A. Eigne3 (3.3.6)
+## 2-A. Eigne3 (3.3.1)
 Already installed in ROS, but 3.2.92 version [reference](https://kezunlin.me/post/d97b21ee/)
 We need eigen3.3 (>-3.3 version)
 Downloda [here](https://gitlab.com/libeigen/eigen/-/releases/3.3.1)
@@ -76,7 +76,8 @@ sudo make install
 Already installed
 
 # 3. libpointmatcher
-(https://github.com/ethz-asl/libpointmatcher/blob/master/doc/Compilation.md)
+Compiling and Installing libpointmatcher on your Computer<br/>
+Detail in [here](https://github.com/ethz-asl/libpointmatcher/blob/master/doc/Compilation.md)
 ## 3-A. Install libnabo
   mkdir ~/Libraries/
   cd ~/Libraries
