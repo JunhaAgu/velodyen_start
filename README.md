@@ -121,23 +121,30 @@ sudo make install
 ```
 
 # 4. [Ceres-solver]( http://ceres-solver.org/installation.html#linux )
-A. dependencies
-# google-glog + gflags
-  sudo apt-get install libgoogle-glog-dev
-# BLAS & LAPACK
-  sudo apt-get install libatlas-base-dev
-# SuiteSparse and CXSparse (optional)
-# - If you want to build Ceres as a *static* library (the default)
-#   you can use the SuiteSparse package in the main Ubuntu package
-#   repository:
-  sudo apt-get install libsuitesparse-dev
-# - However, if you want to build Ceres as a *shared* library, you must
-#   add the following PPA:
-  sudo add-apt-repository ppa:bzindovic/suitesparse-bugfix-1319687
-  sudo apt-get update
-  sudo apt-get install libsuitesparse-dev
-
-B. Install Ceres Solver
+## 4-A. dependencies
+google-glog + gflags
+```bash
+sudo apt-get install libgoogle-glog-dev
+```
+BLAS & LAPACK
+```bash
+sudo apt-get install libatlas-base-dev
+```
+SuiteSparse and CXSparse (optional)
+- If you want to build Ceres as a *static* library (the default)
+  you can use the SuiteSparse package in the main Ubuntu package
+  repository:
+```bash
+sudo apt-get install libsuitesparse-dev
+```
+- However, if you want to build Ceres as a *shared* library, you must
+  add the following PPA:
+```bash
+sudo add-apt-repository ppa:bzindovic/suitesparse-bugfix-1319687
+sudo apt-get update
+sudo apt-get install libsuitesparse-dev
+```
+## 4-B. Install Ceres Solver
 #Since Ubuntu 16.04 offers eigen 3.2.92 version to user, I installed 3.3.5 ver.
   cd Libraries/
   git clone https://ceres-solver.googlesource.com/ceres-solver
