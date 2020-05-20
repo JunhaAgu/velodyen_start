@@ -177,7 +177,7 @@ sudo make install
 sudo apt install ros-kinetic-nav-msgs
 ```
 
-# Dual Lidar calibration
+# <Dual Lidar calibration>
 ```bash
 source ~/.bashrc
 cd catkin_ws/src/
@@ -187,7 +187,7 @@ git clone https://github.com/ram-lab/lidar_appearance_calibration.git
 ```bash
 sudo apt-get install ros-kinetic-pcl-ros
 ```
-Warning (openni2)
+## Warning (openni2)
 If some warning about *openni2*, please see [here](https://github.com/autowarefoundation/autoware/issues/1072)
 
 ## Modify the code
