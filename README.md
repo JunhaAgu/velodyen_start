@@ -1,4 +1,4 @@
-# velodyen_start
+# Velodyen_start
 puck 16 setting
 ## Install ros driver about Puck16
 ```bash
@@ -10,8 +10,8 @@ roscd velodyne_pointcloud/launch/
 sudo cp VLP16_points.launch two_lidar.launch
 sudo gedit two_lidar.launch
 ```
-==========================================================================================================
-1. install PCL1.8 ver.
+
+# 1. install PCL1.8 ver.
 A. Setup Prerequisites ( from https://larrylisky.com/2016/11/03/point-cloud-library-on-ubuntu-16-04-lts/ )
   sudo apt-get update
   sudo apt-get install git build-essential linux-libc-dev
