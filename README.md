@@ -54,9 +54,8 @@ cmake .. # with enhanced compiler optimizations `cmake -DCMAKE_BUILD_TYPE=Releas
 make -j8
 sudo make install
 ```
-  
-그냥 아래 홈페이지 따라하기
-https://askubuntu.com/questions/916260/how-to-install-point-cloud-library-v1-8-pcl-1-8-0-on-ubuntu-16-04-2-lts-for
+If the above method does not work <br/>
+Follow [here](https://askubuntu.com/questions/916260/how-to-install-point-cloud-library-v1-8-pcl-1-8-0-on-ubuntu-16-04-2-lts-for)
   
 ==========================================================================================================
 2. Install Eigen3 & Boost 
