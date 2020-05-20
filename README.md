@@ -196,13 +196,14 @@ search jjiao --> modify
 - calib_preprocess.cpp <br/>
 search jjiao --> modify
   
-  eigen3랑 pcl-1.8 include할 때 필요한 버전들이 local에 있기 때문에 경로 설정 다시!
+- eigen3랑 pcl-1.8 include할 때 필요한 버전들이 local에 있기 때문에 경로 설정 다시!
   
-  https://snapcraft.io/install/cloudcompare/ubuntu
-  sudo apt update
-  sudo apt install snapd
-  sudo snap install cloudcompare
-  
+## [cloudcompare](https://snapcraft.io/install/cloudcompare/ubuntu)
+```bash
+sudo apt update
+sudo apt install snapd
+sudo snap install cloudcompare
+```  
   ======================================================================================================
   
   veloview 다운로드 (아마 이거 통해서 csv파일로 바꿔줘야할듯요..
