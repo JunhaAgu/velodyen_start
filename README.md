@@ -105,20 +105,22 @@ sudo apt install ocl-icd-opencl-dev
 ```
 
 ## 3-B. libpointmacher
-  cd ~/Libraries/
-  git clone git://github.com/ethz-asl/libpointmatcher.git
-  cd libpointmatcher
+```bash
+cd ~/Libraries/
+git clone git://github.com/ethz-asl/libpointmatcher.git
+cd libpointmatcher
+```
+build
+```bash
+SRC_DIR=`pwd`
+BUILD_DIR=${SRC_DIR}/build
+mkdir -p ${BUILD_DIR} && cd ${BUILD_DIR}
+cmake -D CMAKE_BUILD_TYPE=RelWithDebInfo ${SRC_DIR}
+make
+sudo make install
+```
 
-  SRC_DIR=`pwd`
-  BUILD_DIR=${SRC_DIR}/build
-  mkdir -p ${BUILD_DIR} && cd ${BUILD_DIR}
-  cmake -D CMAKE_BUILD_TYPE=RelWithDebInfo ${SRC_DIR}
-  make
-
-  sudo make install
-  
-==========================================================================================================
-4. Ceres-solver ( http://ceres-solver.org/installation.html#linux )
+# 4. [Ceres-solver]( http://ceres-solver.org/installation.html#linux )
 A. dependencies
 # google-glog + gflags
   sudo apt-get install libgoogle-glog-dev
