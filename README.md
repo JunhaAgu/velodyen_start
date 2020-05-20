@@ -85,7 +85,6 @@ cd ~/Libraries
 git clone git://github.com/ethz-asl/libnabo.git
 cd libnabo
 ```
-build
 ```bash
 SRC_DIR=`pwd`
 BUILD_DIR=${SRC_DIR}/build
@@ -110,7 +109,6 @@ cd ~/Libraries/
 git clone git://github.com/ethz-asl/libpointmatcher.git
 cd libpointmatcher
 ```
-build
 ```bash
 SRC_DIR=`pwd`
 BUILD_DIR=${SRC_DIR}/build
@@ -148,7 +146,6 @@ cd Libraries/
 git clone https://ceres-solver.googlesource.com/ceres-solver
 cd ceres-solver/
 ```
-build
 ```bash
 mkdir build
 cd build/
@@ -172,7 +169,7 @@ make -j8
 sudo make install
 ``` 
 # 6. opencv(3.2.0 ver.)
-4.0.1 ver. [webpage](https://webnautes.tistory.com/1030) X
+4.0.1 ver. [webpage](https://webnautes.tistory.com/1030) X<br/>
 3.2.0 ver. Follow this [opencv(3.2.0 ver.)](https://agiantmind.tistory.com/183)
   
 **nav-msgs
