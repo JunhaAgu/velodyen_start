@@ -172,26 +172,29 @@ sudo make install
 4.0.1 ver. [webpage](https://webnautes.tistory.com/1030) X<br/>
 3.2.0 ver. Follow this [opencv(3.2.0 ver.)](https://agiantmind.tistory.com/183)
   
-**nav-msgs
-  sudo apt install ros-kinetic-nav-msgs
-==========================================================================================================
-==========================================================================================================
-**Dual Lidar calibration
-  source ~/.bashrc
-  cd catkin_ws/src/
-  git clone https://github.com/ram-lab/lidar_appearance_calibration.git
-  
-  sudo apt-get install ros-kinetic-pcl-ros
-  (https://github.com/uzh-rpg/rpg_svo_example/issues/44)
-  
-  warning에 무슨 openni2 어쩌고 저쩌고
-  https://github.com/autowarefoundation/autoware/issues/1072
-  
-  ========================================================================================================
-  calib_evaluation.cpp
-  search jjiao --> modify
-  calib_preprocess.cpp
-  search jjiao --> modify
+## nav-msgs
+```bash
+sudo apt install ros-kinetic-nav-msgs
+```
+
+# Dual Lidar calibration
+```bash
+source ~/.bashrc
+cd catkin_ws/src/
+git clone https://github.com/ram-lab/lidar_appearance_calibration.git
+```
+[ros-kinetic-pcl-ros](https://github.com/uzh-rpg/rpg_svo_example/issues/44)
+```bash
+sudo apt-get install ros-kinetic-pcl-ros
+```
+Warning (openni2)
+If some warning about *openni2*, please see [here](https://github.com/autowarefoundation/autoware/issues/1072)
+
+## Modify the code
+- calib_evaluation.cpp <br/>
+search jjiao --> modify
+- calib_preprocess.cpp <br/>
+search jjiao --> modify
   
   eigen3랑 pcl-1.8 include할 때 필요한 버전들이 local에 있기 때문에 경로 설정 다시!
   
