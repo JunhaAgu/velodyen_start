@@ -157,23 +157,23 @@ make
 sudo make install
 ```
 
-==========================================================================================================
-5. YAML ( https://github.com/jbeder/yaml-cpp )
-  cd ~/Libraries/
-  git clone https://github.com/jbeder/yaml-cpp.git
-  cd yaml-cpp/
-  mkdir build
-  cd build/
-  cmake ..
-  make -j8
-  sudo make install
-  
-6. opencv(4.0.1 ver.) X
-  follow this webpage X
-  https://webnautes.tistory.com/1030 X
-  
-  opencv(3.2.0 ver.)
-  https://agiantmind.tistory.com/183
+# 5. [YAML]( https://github.com/jbeder/yaml-cpp )
+```bash
+cd ~/Libraries/
+git clone https://github.com/jbeder/yaml-cpp.git
+cd yaml-cpp/
+```
+build
+```bash
+mkdir build
+cd build/
+cmake ..
+make -j8
+sudo make install
+``` 
+# 6. opencv(3.2.0 ver.)
+4.0.1 ver. [webpage](https://webnautes.tistory.com/1030) X
+3.2.0 ver. Follow this [opencv(3.2.0 ver.)](https://agiantmind.tistory.com/183)
   
 **nav-msgs
   sudo apt install ros-kinetic-nav-msgs
