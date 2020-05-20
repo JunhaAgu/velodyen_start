@@ -169,7 +169,7 @@ make -j8
 sudo make install
 ``` 
 # 6. opencv(3.2.0 ver.)
-4.0.1 ver. [webpage](https://webnautes.tistory.com/1030) X<br/>
+~~4.0.1 ver. [webpage](https://webnautes.tistory.com/1030)~~ <br/>
 3.2.0 ver. Follow this [opencv(3.2.0 ver.)](https://agiantmind.tistory.com/183)
   
 ## nav-msgs
@@ -177,7 +177,7 @@ sudo make install
 sudo apt install ros-kinetic-nav-msgs
 ```
 
-# <Dual Lidar calibration>
+# Dual Lidar calibration
 ```bash
 source ~/.bashrc
 cd catkin_ws/src/
