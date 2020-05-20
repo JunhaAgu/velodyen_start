@@ -54,7 +54,7 @@ cmake .. # with enhanced compiler optimizations `cmake -DCMAKE_BUILD_TYPE=Releas
 make -j8
 sudo make install
 ```
-## B(Alternatives)
+#### B(Alternatives)
 If the above method does not work, ollow [here](https://askubuntu.com/questions/916260/how-to-install-point-cloud-library-v1-8-pcl-1-8-0-on-ubuntu-16-04-2-lts-for)
   
 ==========================================================================================================
