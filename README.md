@@ -61,7 +61,7 @@ If the above method does not work, ollow [here](https://askubuntu.com/questions/
 ## 2-A. Eigne3 (3.3.1)
 Already installed in ROS, but 3.2.92 version [reference](https://kezunlin.me/post/d97b21ee/)
 We need eigen3.3 (>-3.3 version)
-Downloda [here](https://gitlab.com/libeigen/eigen/-/releases/3.3.1)
+Download [here](https://gitlab.com/libeigen/eigen/-/releases/3.3.1)
 ```bash
 cd Libraries/eigen-3.3.1/
 mkdir build
@@ -79,25 +79,32 @@ Already installed
 Compiling and Installing libpointmatcher on your Computer<br/>
 Detail in [here](https://github.com/ethz-asl/libpointmatcher/blob/master/doc/Compilation.md)
 ## 3-A. Install libnabo
-  mkdir ~/Libraries/
-  cd ~/Libraries
-  git clone git://github.com/ethz-asl/libnabo.git
-  cd libnabo
+```bash
+mkdir ~/Libraries/
+cd ~/Libraries
+git clone git://github.com/ethz-asl/libnabo.git
+cd libnabo
+```
+build
+```bash
+SRC_DIR=`pwd`
+BUILD_DIR=${SRC_DIR}/build
+mkdir -p ${BUILD_DIR} && cd ${BUILD_DIR}
+cmake -D CMAKE_BUILD_TYPE=RelWithDebInfo ${SRC_DIR}
+make
+sudo make install
+```
 
-  SRC_DIR=`pwd`
-  BUILD_DIR=${SRC_DIR}/build
-  mkdir -p ${BUILD_DIR} && cd ${BUILD_DIR}
-  cmake -D CMAKE_BUILD_TYPE=RelWithDebInfo ${SRC_DIR}
-  make
-  sudo make install
-  
-  추가
-  sudo apt-get install doxygen
-  
-(?)sudo apt update
-(?)sudo apt install ocl-icd-opencl-dev
+#### Additional download
+It may be needed
+```bash
+sudo apt-get install doxygen
 
-B. libpointmacher
+sudo apt update
+sudo apt install ocl-icd-opencl-dev
+```
+
+## 3-B. libpointmacher
   cd ~/Libraries/
   git clone git://github.com/ethz-asl/libpointmatcher.git
   cd libpointmatcher
