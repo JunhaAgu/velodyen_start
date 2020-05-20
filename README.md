@@ -43,15 +43,17 @@ Detail in [here](https://pcl.gitbook.io/tutorial/part-0/part00-chapter02)
 ```bash
 mkdir Library
 cd Library/
+wget https://github.com/PointCloudLibrary/pcl/archive/pcl-1.8.1.tar.gz
+tar zvfx pcl-1.8.1.tar.gz
+cd pcl-1.8.1
 ```
-  wget https://github.com/PointCloudLibrary/pcl/archive/pcl-1.8.1.tar.gz
-  tar zvfx pcl-1.8.1.tar.gz
-#In this step, you should change the file name(pcl_pcl-1.8.1 --> pcl-1.8.1)
-  cd pcl-1.8.1
-  mkdir build && cd build
-  cmake .. # with enhanced compiler optimizations `cmake -DCMAKE_BUILD_TYPE=Release ..`
-  make -j8
-  sudo make install
+Make build folder --> cmake --> make --> sudo make install
+```bashe
+mkdir build && cd build
+cmake .. # with enhanced compiler optimizations `cmake -DCMAKE_BUILD_TYPE=Release ..`
+make -j8
+sudo make install
+```
   
 그냥 아래 홈페이지 따라하기
 https://askubuntu.com/questions/916260/how-to-install-point-cloud-library-v1-8-pcl-1-8-0-on-ubuntu-16-04-2-lts-for
