@@ -4,6 +4,10 @@ puck 16 setting
 #install about Puck16
   sudo apt-get install ros-kinetic-velodyne*
   
+# grouping lidar launch file
+roscd velodyne_pointcloud/launch/
+sudo cp VLP16_points.launch two_lidar.launch
+sudo gedit two_lidar.launch
 ==========================================================================================================
 1. install PCL1.8 ver.
 A. Setup Prerequisites ( from https://larrylisky.com/2016/11/03/point-cloud-library-on-ubuntu-16-04-lts/ )
