@@ -23,9 +23,9 @@ sudo apt-get install libflann1.8 libflann-dev
 sudo apt-get install libeigen3-dev
 sudo apt-get install libboost-all-dev
 ```
+When install below, something are removed (?)
 ```bash
 sudo apt-get install libvtk5.10-qt4 libvtk5.10 libvtk5-dev
--->이거 설치하면 ros package 관련 이전것들 지워지는데 무슨문제인지?
 ```
 ```bash
 sudo apt-get install libqhull* libgtest-dev
