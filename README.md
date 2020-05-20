@@ -11,8 +11,8 @@ sudo cp VLP16_points.launch two_lidar.launch
 sudo gedit two_lidar.launch
 ```
 
-# 1. install PCL1.8 ver.
-A. Setup Prerequisites ( from https://larrylisky.com/2016/11/03/point-cloud-library-on-ubuntu-16-04-lts/ )
+# 1. Install PCL1.8 ver.
+A. Setup [Prerequisites](https://larrylisky.com/2016/11/03/point-cloud-library-on-ubuntu-16-04-lts/)
   sudo apt-get update
   sudo apt-get install git build-essential linux-libc-dev
   sudo apt-get install cmake cmake-gui 
