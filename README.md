@@ -1,12 +1,10 @@
 # velodyen_start
 puck 16 setting
-
 ## install about Puck16
 ```bash
-  sudo apt-get install ros-kinetic-velodyne*
-  ```
-  
-# grouping lidar launch file
+sudo apt-get install ros-kinetic-velodyne*
+```
+## grouping lidar launch file
 roscd velodyne_pointcloud/launch/
 sudo cp VLP16_points.launch two_lidar.launch
 sudo gedit two_lidar.launch
