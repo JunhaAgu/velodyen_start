@@ -54,26 +54,28 @@ cmake .. # with enhanced compiler optimizations `cmake -DCMAKE_BUILD_TYPE=Releas
 make -j8
 sudo make install
 ```
-#### B(Alternatives)
+#### B. (Alternatives)
 If the above method does not work, ollow [here](https://askubuntu.com/questions/916260/how-to-install-point-cloud-library-v1-8-pcl-1-8-0-on-ubuntu-16-04-2-lts-for)
-  
-==========================================================================================================
-2. Install Eigen3 & Boost 
-A. Eigne3 (3.3.6)
-Already installed in ROS (https://kezunlin.me/post/d97b21ee/)
-BUT! We need eigen3.3 (>-3.3 version)
-Downloda here --> https://gitlab.com/libeigen/eigen/-/releases/3.3.6
-  cd Libraries/eigen-3.3.6/
-  mkdir build
-  cd build/
-  cmake ..
-#You can see something to do next
-  sudo make install
-  
-B. Boost
 
-==========================================================================================================
-3. libpointmatcher
+# 2. Install Eigen3 & Boost 
+## A. Eigne3 (3.3.6)
+Already installed in ROS, but 3.2.92 version [reference](https://kezunlin.me/post/d97b21ee/)
+We need eigen3.3 (>-3.3 version)
+Downloda [here](https://gitlab.com/libeigen/eigen/-/releases/3.3.1)
+```bash
+cd Libraries/eigen-3.3.1/
+mkdir build
+cd build/
+cmake ..
+```
+After doing cmake you can see something to do next
+```bash
+sudo make install
+```
+## B. Boost
+Already installed
+
+# 3. libpointmatcher
 (https://github.com/ethz-asl/libpointmatcher/blob/master/doc/Compilation.md)
 A. Install libnabo
   mkdir ~/Libraries/
