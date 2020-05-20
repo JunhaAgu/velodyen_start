@@ -12,7 +12,7 @@ sudo gedit two_lidar.launch
 ```
 
 # 1. Install PCL1.8 ver.
-## A. Setup Prerequisites
+## 1-A. Setup Prerequisites
 Detail in [here](https://larrylisky.com/2016/11/03/point-cloud-library-on-ubuntu-16-04-lts/)
 ```bash
 sudo apt-get update
@@ -36,7 +36,7 @@ sudo apt-get install mono-complete
 sudo apt-get install qt-sdk openjdk-8-jdk openjdk-8-jre
 ```
   
-## B. pcl-1.8 download
+## 1-B. pcl-1.8 download
 Ubuntu 16 (checked!) <br/>
 Detail in [here](https://pcl.gitbook.io/tutorial/part-0/part00-chapter02)
 
@@ -54,11 +54,11 @@ cmake .. # with enhanced compiler optimizations `cmake -DCMAKE_BUILD_TYPE=Releas
 make -j8
 sudo make install
 ```
-#### B. (Alternatives)
+#### 1-B. (Alternatives)
 If the above method does not work, ollow [here](https://askubuntu.com/questions/916260/how-to-install-point-cloud-library-v1-8-pcl-1-8-0-on-ubuntu-16-04-2-lts-for)
 
 # 2. Install Eigen3 & Boost 
-## A. Eigne3 (3.3.6)
+## 2-A. Eigne3 (3.3.6)
 Already installed in ROS, but 3.2.92 version [reference](https://kezunlin.me/post/d97b21ee/)
 We need eigen3.3 (>-3.3 version)
 Downloda [here](https://gitlab.com/libeigen/eigen/-/releases/3.3.1)
@@ -72,12 +72,12 @@ After doing cmake you can see something to do next
 ```bash
 sudo make install
 ```
-## B. Boost
+## 2-B. Boost
 Already installed
 
 # 3. libpointmatcher
 (https://github.com/ethz-asl/libpointmatcher/blob/master/doc/Compilation.md)
-A. Install libnabo
+## 3-A. Install libnabo
   mkdir ~/Libraries/
   cd ~/Libraries
   git clone git://github.com/ethz-asl/libnabo.git
