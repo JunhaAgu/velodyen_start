@@ -1,0 +1,18 @@
+<!-- -*- mode: XML -*- -->
+<!-- run velodyne_pointcloud/CloudNodelet in a nodelet manager for a VLP-16 -->
+
+<launch>
+
+	<group ns = "lidar1">
+	<include file="$(find velodyne_pointcloud)/launch/VLP16_points.launch">
+  		<arg name="device_ip" value="192.168.1.101" />
+  		<arg name="port" value="2367" />
+	</include>
+	</group>
+
+	<group ns = "lidar2">
+	<include file="$(find velodyne_pointcloud)/launch/VLP16_points.launch">
+     	</include>
+	</group>
+
+</launch>
