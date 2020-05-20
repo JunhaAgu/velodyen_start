@@ -160,7 +160,6 @@ cd ~/Libraries/
 git clone https://github.com/jbeder/yaml-cpp.git
 cd yaml-cpp/
 ```
-build
 ```bash
 mkdir build
 cd build/
