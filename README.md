@@ -37,8 +37,8 @@ sudo apt-get install qt-sdk openjdk-8-jdk openjdk-8-jre
 ```
   
 ## B. pcl-1.8 download
-Following [download](https://pcl.gitbook.io/tutorial/part-0/part00-chapter02)
 Ubuntu 16 (checked!)
+Detail in [here](https://pcl.gitbook.io/tutorial/part-0/part00-chapter02)
 
 ```bash
 mkdir Library
