@@ -12,7 +12,8 @@ sudo gedit two_lidar.launch
 ```
 
 # 1. Install PCL1.8 ver.
-### A. Setup [Prerequisites](https://larrylisky.com/2016/11/03/point-cloud-library-on-ubuntu-16-04-lts/)
+## A. Setup Prerequisites
+Detail in [here](https://larrylisky.com/2016/11/03/point-cloud-library-on-ubuntu-16-04-lts/)
 ```bash
 sudo apt-get update
 sudo apt-get install git build-essential linux-libc-dev
@@ -35,10 +36,14 @@ sudo apt-get install mono-complete
 sudo apt-get install qt-sdk openjdk-8-jdk openjdk-8-jre
 ```
   
-B. pcl-1.8( from https://pcl.gitbook.io/tutorial/part-0/part00-chapter02 )
-#Ubuntu 16 (checked!)
-  mkdir Library
-  cd Library/
+## B. pcl-1.8 download
+Following [download](https://pcl.gitbook.io/tutorial/part-0/part00-chapter02)
+Ubuntu 16 (checked!)
+
+```bash
+mkdir Library
+cd Library/
+```
   wget https://github.com/PointCloudLibrary/pcl/archive/pcl-1.8.1.tar.gz
   tar zvfx pcl-1.8.1.tar.gz
 #In this step, you should change the file name(pcl_pcl-1.8.1 --> pcl-1.8.1)
