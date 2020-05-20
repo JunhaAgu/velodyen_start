@@ -131,29 +131,31 @@ BLAS & LAPACK
 sudo apt-get install libatlas-base-dev
 ```
 SuiteSparse and CXSparse (optional)
-- If you want to build Ceres as a *static* library (the default)
-  you can use the SuiteSparse package in the main Ubuntu package
-  repository:
+- If you want to build Ceres as a *static* library (the default), you can use the SuiteSparse package in the main Ubuntu package repository:
 ```bash
 sudo apt-get install libsuitesparse-dev
 ```
-- However, if you want to build Ceres as a *shared* library, you must
-  add the following PPA:
+- However, if you want to build Ceres as a *shared* library, you must add the following PPA:
 ```bash
 sudo add-apt-repository ppa:bzindovic/suitesparse-bugfix-1319687
 sudo apt-get update
 sudo apt-get install libsuitesparse-dev
 ```
 ## 4-B. Install Ceres Solver
-#Since Ubuntu 16.04 offers eigen 3.2.92 version to user, I installed 3.3.5 ver.
-  cd Libraries/
-  git clone https://ceres-solver.googlesource.com/ceres-solver
-  cd ceres-solver/
-  mkdir build
-  cd build/
-  cmake ..
-  make
-  sudo make install
+Since Ubuntu 16.04 offers eigen 3.2.92 version to user, I installed 3.3.1 ver.
+```bash
+cd Libraries/
+git clone https://ceres-solver.googlesource.com/ceres-solver
+cd ceres-solver/
+```
+build
+```bash
+mkdir build
+cd build/
+cmake ..
+make
+sudo make install
+```
 
 ==========================================================================================================
 5. YAML ( https://github.com/jbeder/yaml-cpp )
